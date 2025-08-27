@@ -1,0 +1,1 @@
+Project AI Agent Alpha is a high-priority initiative aiming to build a conversational agent for query resolution. The agent will leverage Retrieval-Augmented Generation (RAG) to pull from structured and unstructured data sources. The deadline is 3 days. Key technologies include LangChain and FAISS.
