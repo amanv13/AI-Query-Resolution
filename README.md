@@ -1,10 +1,10 @@
-🤖 AI Agent for Query Resolution
+## 🤖 AI Agent for Query Resolution
 This project is an AI agent that answers user queries by retrieving information from a local SQL database, text documents, and real-time web searches. The agent is built using Python and the LangChain framework, leveraging Google's Gemini models.
 
-🎯 Objective
+## 🎯 Objective
 The goal is to build an agent that accepts a user query, retrieves relevant structured data (SQL) and unstructured data (RAG), and augments it with real-time web search to synthesize a final, cited answer. This fulfills the requirements of Task A from the project brief.
 
-✨ Features
+## ✨ Features
 Structured Data Retrieval: Connects to a SQLite database to answer specific questions about projects and employees.
 
 Unstructured Data Retrieval (RAG): Searches a FAISS vector database of internal documents to answer conceptual questions.
@@ -13,7 +13,7 @@ Real-time Web Search: Uses SerpAPI to find up-to-the-minute information on the w
 
 Explainability: The agent's thought process is printed to the console, showing which tool it chose and why for each query.
 
-🛠️ Project Setup and Installation
+## 🛠️ Project Setup and Installation
 Follow these steps to set up and run the project locally.
 
 Clone the Repository
@@ -27,11 +27,11 @@ Create and Activate Virtual Environment
 python3 -m venv venv
 source venv/bin/activate
 
-Install Dependencies
+# Install Dependencies
 
 pip install -r requirements.txt
 
-Set Up API Keys
+# Set Up API Keys
 
 Create a file named .env in the root of the project.
 
@@ -40,7 +40,7 @@ Add your API keys to the file in the following format:
 GOOGLE_API_KEY="your_google_api_key_here"
 SERPAPI_API_KEY="your_serpapi_key_here"
 
-Prepare Data Sources
+# Prepare Data Sources
 
 First, create and populate the SQL database:
 
@@ -50,14 +50,14 @@ Next, process the documents and create the vector index:
 
 python ingest.py
 
-🚀 How to Run the Agent
+## 🚀 How to Run the Agent
 Once the setup is complete, you can start the agent with the following command:
 
 python agent.py
 
 The agent will launch and you can begin asking questions at the You: prompt. Type exit to quit.
 
-📊 Sample Queries & Outputs
+## 📊 Sample Queries & Outputs
 Here are the outputs from the 6 required test queries, demonstrating the agent's ability to use its different tools.
 
 <details>
@@ -213,3 +213,4 @@ Tool Used: Web_Search (Implicitly)
 Final Answer: Australia won the last Cricket World Cup.
 
 </details>
+
